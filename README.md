@@ -11,7 +11,7 @@ pythonanywhere で使用することをゴールとしている。
 4. create a new API token をクリック
 5. ダッシュボードに戻り New Console→\$bash をクリック
 6. ヘルパーツールのインストールをする。以下を実行。
-   - `pip3.6 install –user pythonanywhere`
+   - `pip3.6 install --user pythonanywhere`
    - `pa_autoconfigure_django.py --python=3.6 https://github.com/river0g/todo_server.git --nuke`
 7. スーパーユーザーの作成をする。
    - `python manage.py createsuperuser`
@@ -28,7 +28,7 @@ pythonanywhere で使用することをゴールとしている。
 6. create a new API token をクリック
 7. ダッシュボードに戻り New Console→\$bash をクリック
 8. ヘルパーツールのインストールをする。以下を実行。
-   - `pip3.6 install –user pythonanywhere`
+   - `pip3.6 install --user pythonanywhere`
    - `pa_autoconfigure_django.py --python=3.6 https://github.com/ユーザー名/リポジトリ名.git --nuke`
 9. スーパーユーザーの作成をする。
    - `python manage.py createsuperuser`
