@@ -23,4 +23,8 @@ urlpatterns = [
     path('api/', include('drfapp.urls')),
     # obtain_auth_tokenはuser情報をpostするとtokenが返る関数
     path('auth/', views.obtain_auth_token),
+
+    # DEBUG=Falseの時に静的ファイル読み込むためのルーティング
+    re_path(r'^static/(?P<path>.*)$', serve,
+            {'document_root': settings.STATIC_ROOT}),
 ]

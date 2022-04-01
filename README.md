@@ -16,7 +16,10 @@ pythonanywhere で使用することをゴールとしている。
 7. スーパーユーザーの作成をする。
    - `python manage.py createsuperuser`
 8. Files に行き drfproject 内の settings.py を開く
-9. ローカルの環境変数を直入力。終わり。
+9. ローカルの環境変数を直入力。
+10. settings.py の DEBUG=False にすると 静的ファイルがうまく適用されないのでそれの対策として settings.py に記述あり。
+11. makemigrations, migrate ができたら collectstatic コマンド忘れずに。
+12. project.urls に DEBUG=False にした時の記述あり。
 
 # introduction(他人用)
 
@@ -33,7 +36,10 @@ pythonanywhere で使用することをゴールとしている。
 9. スーパーユーザーの作成をする。
    - `python manage.py createsuperuser`
 10. Files に行き drfproject 内の settings.py を開く
-11. ローカルの環境変数を直入力。終わり。
+11. ローカルの環境変数を直入力。
+12. settings.py の DEBUG=False にすると 静的ファイルがうまく適用されないのでそれの対策として settings.py に記述あり。
+13. makemigrations, migrate ができたら collectstatic コマンド忘れずに。
+14. project.urls に DEBUG=False にした時の記述あり。
 
 # EndPoints
 
